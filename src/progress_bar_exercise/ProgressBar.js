@@ -1,6 +1,7 @@
 import React from 'react'
 
-const ProgressBar = ({ progress }) => {
+const ProgressBar = ({ progress, breakpoints }) => {
+  const ease = breakpoints.includes(progress) ? 'width 3s ease' : 'width 1s ease-out'
   const styles = {
     container: { 
       backgroundColor: 'lightgray', 
@@ -12,7 +13,7 @@ const ProgressBar = ({ progress }) => {
       width: `${progress}%`, 
       borderRadius: 3,
       backgroundImage: 'linear-gradient(to right, orange, red)',
-      transition: 'width 1s ease-out'
+      transition: ease
     }
   }
 
