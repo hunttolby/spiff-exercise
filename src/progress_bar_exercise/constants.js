@@ -1,0 +1,5 @@
+export const BUTTON_STATE_DEFAULT = 'default'
+export const BUTTON_STATE_HOVER = 'hover'
+export const BUTTON_STATE_CLICKED = 'clicked'
+export const BUTTON_TYPES_START = 'start'
+export const BUTTON_TYPES_FINISH = 'finish'
